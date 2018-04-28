@@ -1,0 +1,39 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.maquina.field_maquina
+    - field.field.paragraph.maquina.field_maquina_compra
+    - field.field.paragraph.maquina.field_maquina_garantia
+    - paragraphs.paragraphs_type.maquina
+  module:
+    - datetime
+id: paragraph.maquina.default
+targetEntityType: paragraph
+bundle: maquina
+mode: default
+content:
+  field_maquina:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_maquina_compra:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_maquina_garantia:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

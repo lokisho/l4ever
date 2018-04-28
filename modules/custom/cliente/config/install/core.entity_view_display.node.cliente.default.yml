@@ -1,0 +1,157 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.cliente.field_cliente_canton
+    - field.field.node.cliente.field_cliente_cedula
+    - field.field.node.cliente.field_cliente_codigo
+    - field.field.node.cliente.field_cliente_cumpleanos
+    - field.field.node.cliente.field_cliente_distrito
+    - field.field.node.cliente.field_cliente_entrega
+    - field.field.node.cliente.field_cliente_estudio
+    - field.field.node.cliente.field_cliente_facebook
+    - field.field.node.cliente.field_cliente_guantes
+    - field.field.node.cliente.field_cliente_maquinas
+    - field.field.node.cliente.field_cliente_observaciones
+    - field.field.node.cliente.field_cliente_provincia
+    - field.field.node.cliente.field_cliente_sennas
+    - field.field.node.cliente.field_cliente_tel
+    - field.field.node.cliente.field_cliente_waze
+    - node.type.cliente
+  module:
+    - datetime
+    - entity_reference_revisions
+    - options
+    - user
+id: node.cliente.default
+targetEntityType: node
+bundle: cliente
+mode: default
+content:
+  field_cliente_canton:
+    weight: 12
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cliente_cedula:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cliente_codigo:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cliente_cumpleanos:
+    weight: 4
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_cliente_distrito:
+    weight: 11
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cliente_entrega:
+    weight: 8
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_cliente_estudio:
+    weight: 9
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_cliente_facebook:
+    weight: 6
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cliente_guantes:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cliente_maquinas:
+    type: entity_reference_revisions_entity_view
+    weight: 14
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_cliente_observaciones:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_cliente_provincia:
+    weight: 10
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_cliente_sennas:
+    weight: 13
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cliente_tel:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_cliente_waze:
+    weight: 15
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

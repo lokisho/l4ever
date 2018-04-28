@@ -1,0 +1,8 @@
+langcode: es
+status: true
+dependencies: {  }
+name: 'Tipo de Entrega'
+vid: tipo_de_entrega
+description: ''
+hierarchy: 0
+weight: 0

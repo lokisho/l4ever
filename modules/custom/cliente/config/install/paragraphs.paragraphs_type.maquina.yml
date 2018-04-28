@@ -1,0 +1,8 @@
+langcode: es
+status: true
+dependencies: {  }
+id: maquina
+label: Maquina
+icon_uuid: null
+description: 'Máquinas de tatuar'
+behavior_plugins: {  }

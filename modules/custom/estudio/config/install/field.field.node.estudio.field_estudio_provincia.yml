@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_estudio_provincia
+    - node.type.estudio
+  module:
+    - options
+id: node.estudio.field_estudio_provincia
+field_name: field_estudio_provincia
+entity_type: node
+bundle: estudio
+label: Provincia
+description: "1|San José\r\n2|Alajuela\r\n3|Cartago\r\n4|Heredia\r\n5|Guanacaste\r\n6|Puntarenas\r\n7|Limón"
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

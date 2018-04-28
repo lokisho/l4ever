@@ -1,0 +1,18 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_distrito
+    - node.type.cliente
+id: node.cliente.field_cliente_distrito
+field_name: field_cliente_distrito
+entity_type: node
+bundle: cliente
+label: Distrito
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,42 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.cliente.field_cliente_canton
+    - field.field.node.cliente.field_cliente_cedula
+    - field.field.node.cliente.field_cliente_codigo
+    - field.field.node.cliente.field_cliente_cumpleanos
+    - field.field.node.cliente.field_cliente_entrega
+    - field.field.node.cliente.field_cliente_estudio
+    - field.field.node.cliente.field_cliente_facebook
+    - field.field.node.cliente.field_cliente_guantes
+    - field.field.node.cliente.field_cliente_observaciones
+    - field.field.node.cliente.field_cliente_sennas
+    - field.field.node.cliente.field_cliente_tel
+    - field.field.node.cliente.field_cliente_waze
+    - node.type.cliente
+  module:
+    - user
+id: node.cliente.teaser
+targetEntityType: node
+bundle: cliente
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_cliente_canton: true
+  field_cliente_cedula: true
+  field_cliente_codigo: true
+  field_cliente_cumpleanos: true
+  field_cliente_entrega: true
+  field_cliente_estudio: true
+  field_cliente_facebook: true
+  field_cliente_guantes: true
+  field_cliente_observaciones: true
+  field_cliente_sennas: true
+  field_cliente_tel: true
+  field_cliente_waze: true
+  langcode: true

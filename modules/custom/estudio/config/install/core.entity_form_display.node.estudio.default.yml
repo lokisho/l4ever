@@ -1,0 +1,93 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.estudio.field_estudio_canton
+    - field.field.node.estudio.field_estudio_distrito
+    - field.field.node.estudio.field_estudio_email
+    - field.field.node.estudio.field_estudio_provincia
+    - field.field.node.estudio.field_estudio_sennas
+    - field.field.node.estudio.field_estudio_tel
+    - field.field.node.estudio.field_estudio_whatsapp
+    - node.type.estudio
+id: node.estudio.default
+targetEntityType: node
+bundle: estudio
+mode: default
+content:
+  field_estudio_canton:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_estudio_distrito:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_estudio_email:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: email_default
+    region: content
+  field_estudio_provincia:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_estudio_sennas:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_estudio_tel:
+    weight: 5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_estudio_whatsapp:
+    weight: 7
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

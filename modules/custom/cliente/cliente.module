@@ -1,0 +1,32 @@
+<?php
+
+/**
+ * @file
+ * Custom module that alters forms.
+ */
+
+/**
+  * Implements hook_form_alter().
+  **/
+
+function cliente_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+  
+  if($form['#form_id'] === 'node_cliente_form') {
+    if (empty($form['field_cliente_codigo']['widget']['0']['value']['#default_value'])) {
+      $form['field_cliente_codigo']['widget']['0']['value']['#default_value'] = cliente_generate_random();
+    }
+  }
+}
+
+function cliente_generate_random() {
+  $candidate = rand(100, 10000);
+  $query = \Drupal::entityQuery('node');
+  $query->condition('type', 'cliente')
+    ->condition('field_cliente_codigo.value', $candidate);
+  $nids = $query->execute();
+  if (!empty($nids)) {
+    die($nids);
+    cliente_generate_random();
+  }
+  return $candidate;
+}

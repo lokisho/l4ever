@@ -1,0 +1,19 @@
+name: Cliente
+description: 'Provides Cliente tipo de contenido and related configuration. Datos del cliente'
+type: module
+core: 8.x
+dependencies:
+  - datetime
+  - entity_reference_revisions
+  - estudio
+  - field
+  - field_group
+  - inline_entity_form
+  - language
+  - menu_ui
+  - node
+  - options
+  - paragraphs
+  - path
+  - taxonomy
+  - user

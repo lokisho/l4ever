@@ -1,0 +1,30 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_maquinas
+    - node.type.cliente
+    - paragraphs.paragraphs_type.maquina
+  module:
+    - entity_reference_revisions
+id: node.cliente.field_cliente_maquinas
+field_name: field_cliente_maquinas
+entity_type: node
+bundle: cliente
+label: Máquinas
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      maquina: maquina
+    target_bundles_drag_drop:
+      maquina:
+        enabled: true
+        weight: 2
+field_type: entity_reference_revisions

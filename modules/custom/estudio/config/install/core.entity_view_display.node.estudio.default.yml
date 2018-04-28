@@ -1,0 +1,81 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.estudio.field_estudio_canton
+    - field.field.node.estudio.field_estudio_distrito
+    - field.field.node.estudio.field_estudio_email
+    - field.field.node.estudio.field_estudio_provincia
+    - field.field.node.estudio.field_estudio_sennas
+    - field.field.node.estudio.field_estudio_tel
+    - field.field.node.estudio.field_estudio_whatsapp
+    - node.type.estudio
+  module:
+    - options
+    - user
+id: node.estudio.default
+targetEntityType: node
+bundle: estudio
+mode: default
+content:
+  field_estudio_canton:
+    weight: 2
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_estudio_distrito:
+    weight: 3
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_estudio_email:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_estudio_provincia:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_estudio_sennas:
+    weight: 4
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_estudio_tel:
+    weight: 5
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_estudio_whatsapp:
+    weight: 7
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

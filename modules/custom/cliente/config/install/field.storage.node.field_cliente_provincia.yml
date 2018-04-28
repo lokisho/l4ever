@@ -1,0 +1,41 @@
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_cliente_provincia
+field_name: field_cliente_provincia
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: '1'
+      label: 'San José'
+    -
+      value: '2'
+      label: Alajuela
+    -
+      value: '3'
+      label: Cartago
+    -
+      value: '4'
+      label: Heredia
+    -
+      value: '5'
+      label: Guanacaste
+    -
+      value: '6'
+      label: Puntarenas
+    -
+      value: '7'
+      label: Limón
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

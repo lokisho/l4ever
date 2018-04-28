@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_maquina_garantia
+    - paragraphs.paragraphs_type.maquina
+  module:
+    - datetime
+id: paragraph.maquina.field_maquina_garantia
+field_name: field_maquina_garantia
+entity_type: paragraph
+bundle: maquina
+label: 'Fecha de Garantía'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

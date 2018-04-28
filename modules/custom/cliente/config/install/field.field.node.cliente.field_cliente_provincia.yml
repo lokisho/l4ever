@@ -1,0 +1,20 @@
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cliente_provincia
+    - node.type.cliente
+  module:
+    - options
+id: node.cliente.field_cliente_provincia
+field_name: field_cliente_provincia
+entity_type: node
+bundle: cliente
+label: Provincia
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
